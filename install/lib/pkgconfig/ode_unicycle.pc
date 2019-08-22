@@ -1,0 +1,8 @@
+prefix=/mnt/student/218549/RosWorkspace4/install
+
+Name: ode_unicycle
+Description: Description of ode_unicycle
+Version: 0.0.0
+Cflags: -I/mnt/student/218549/RosWorkspace4/install/include
+Libs: -L/mnt/student/218549/RosWorkspace4/install/lib 
+Requires: message_generation message_runtime roscpp rospy std_msgs

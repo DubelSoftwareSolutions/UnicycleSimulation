@@ -1,0 +1,2 @@
+ode_unicycle
+-DCATKIN_DEVEL_PREFIX=/mnt/student/Desktop/RosWorkspace4/devel -DCMAKE_INSTALL_PREFIX=/mnt/student/Desktop/RosWorkspace4/install -G Unix Makefiles

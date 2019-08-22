@@ -1,0 +1,10 @@
+(cl:defpackage ode_unicycle-srv
+  (:use )
+  (:export
+   "SETINITIALSTATE"
+   "<SETINITIALSTATE-REQUEST>"
+   "SETINITIALSTATE-REQUEST"
+   "<SETINITIALSTATE-RESPONSE>"
+   "SETINITIALSTATE-RESPONSE"
+  ))
+

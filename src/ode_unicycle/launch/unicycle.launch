@@ -1,0 +1,21 @@
+<launch>
+<group ns="kd_ode">
+  <node name="kd_unicycle" pkg="ode_unicycle" type="motion_simulation">
+	<remap from="controlInput" to="controlSignal"/>
+	<remap from="timeInput" to="simulationTime"/>
+	<remap from="stateOutput" to="platformState"/>
+  </node>
+  <node name="kd_time_generator" pkg="ode_unicycle" type="time_generator">
+	<remap from="timeOutput" to="simulationTime"/>
+  </node>
+  <node name="kd_control_generator" pkg="ode_unicycle" type="control_signal_generator">
+	<remap from="timeInput" to="simulationTime"/>
+	<remap from="signalOutput" to="controlSignal"/>
+  </node>
+  <node name="kd_log" pkg="ode_unicycle" type="signal_logger">
+	<param name="fileName" value="/home/student/218549/RosWorkspace4/log_file.txt"/>
+	<remap from="logIn" to="platformState"/>
+	<remap from="timeIn" to="simulationTime"/>
+  </node>
+</group>
+</launch>
